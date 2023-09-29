@@ -1,0 +1,49 @@
+.select-section {
+    /* border: 1px solid red !important; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0rem;
+    padding-left: 1rem;
+}
+
+.selector-section {
+    height: 2rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuiInputBase-root {
+    width: 100% !important;
+    height: 100% !important;
+    border: 2px solid var(--green) !important;
+}
+
+.MuiInputBase-root * {
+    border: none !important;
+}
+
+.MuiSelect-select {
+    color: var(--white) !important;
+    padding: 0.5rem !important;
+}
+
+.MuiSelect-select * {
+    border: none !important;
+}
+
+.MuiPaper-root {
+    background-color: var(--white) !important;
+}
+
+.MuiPaper-root ul {
+    color: var(--black) !important;
+}
+
+.MuiPaper-root ul .Mui-selected {
+    background-color: var(--green) !important;
+    color: var(--white);
+}

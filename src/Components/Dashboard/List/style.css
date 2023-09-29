@@ -1,0 +1,203 @@
+.list-coin-card {
+    border: 1px solid var(--black);
+    width: 100%;
+    height: 5rem;
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    transition: all 0.3s;
+}
+
+.list-coin-card:hover {
+    cursor: pointer;
+    background-color: var(--darkgrey);
+}
+
+.list-logo-section {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
+
+.list-coin-image {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.list-name-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.list-coin-symbol {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.list-coin-name {
+    font-weight: 200;
+    color: var(--grey);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.list-fav-section {
+    border: 1px solid var(--grey);
+    width: 5%;
+    height: 100%;
+}
+
+.list-percentage-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 20%;
+}
+
+.list-percentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    width: 5rem;
+    padding: 0.2rem;
+    transition: all 0.3s;
+}
+
+.list-trending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 0.2rem;
+    transition: all 0.3s;
+}
+
+.list-trending-up {
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+/* .list-trending-up:hover {
+    background-color: var(--green);
+    transition: all 0.3s;
+    color: var(--white);
+} */
+
+.list-trending-down {
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+/* .list-trending-down:hover {
+    background-color: var(--red);
+    transition: all 0.3s;
+    color: var(--white);
+} */
+
+.list-price-section {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.list-price {
+    font-size: 1rem;
+    min-width: 10rem;
+}
+
+.list-total-volume {
+    color: var(--grey);
+    font-size: 1rem;
+    min-width: 10rem;
+}
+
+.list-market-cap {
+    color: var(--grey);
+    font-size: 1rem;
+    width: 10rem;
+}
+
+.list-icon-red * {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.list-icon-green * {
+    color: var(--green);
+    border-color: var(--green);
+}
+
+
+@media screen and (max-width:1080px) {
+    .list-coin-card {
+        width: 100%;
+        padding: 0;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .list-logo-section {
+        width: 30%;
+        padding: 0;
+        gap: 0.5rem;
+    }
+
+    .list-coin-image {
+        width: 30%;
+    }
+
+    .list-name-section {
+        width: 70%;
+    }
+
+    .list-percentage-section {
+        width: 20%;
+        gap: 0;
+        /* display: none; */
+    }
+
+    .list-percentage {
+        /* display: none; */
+        border: none;
+        padding: 0;
+    }
+
+    .list-trending {
+        border: none;
+        padding: 0;
+    }
+
+    .list-price-section {
+        /* display: none; */
+        width: 30%;
+        justify-content: flex-start;
+    }
+
+    .list-price {
+        width: fit-content;
+        min-width: 0;
+    }
+
+    .list-market-cap {
+        display: none;
+    }
+
+    .list-total-volume {
+        display: none;
+    }
+}

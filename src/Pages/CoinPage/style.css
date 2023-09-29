@@ -1,0 +1,22 @@
+.coin-info-main {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chart-section-main {
+    background-color: var(--darkgrey);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1080px) {
+    .coin-info-main {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,33 @@
+.page-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.page-container li button {
+    color: var(--white);
+    border: 2px solid var(--green);
+    /* background-color: var(--darkgrey); */
+}
+
+.page-container li div {
+    color: var(--white);
+    /* background-color: var(--darkgrey); */
+}
+
+.page-container li .Mui-selected {
+    background-color: var(--green) !important;
+}
+
+@media screen and (max-width:1080px) {
+    .page-container ul {}
+
+    .page-container li * {
+        height: 2rem !important;
+        margin: 0.1rem !important;
+    }
+}

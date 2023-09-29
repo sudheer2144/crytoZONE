@@ -1,0 +1,13 @@
+.loader-section {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--black);
+}
+
+.loader-section * {
+    color: var(--green);
+}

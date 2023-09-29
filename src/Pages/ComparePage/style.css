@@ -1,0 +1,47 @@
+.main-compare-section {
+    /* background-color: var(--darkgrey); */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin: 1rem; */
+}
+
+
+.select-coin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0rem; */
+    padding: 1rem;
+    /* border: 1px solid red; */
+    /* width: 100%; */
+}
+
+.desc-compare-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width:1080px) {
+    .select-coin-section {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .select-coin-section>div {
+        padding: 0.2rem;
+    }
+
+    .select-coin-section p {
+        display: none;
+    }
+
+    .desc-compare-section {
+        padding: 0 1rem;
+    }
+}
